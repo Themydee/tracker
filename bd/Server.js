@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(cors({
-  origin: '*'
+  origin: 'https://tracker-self-nu.vercel.app/'
 }))
 app.post('/api/track', (req, res) => {
   const { trackingId } = req.body;
