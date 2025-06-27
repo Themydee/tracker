@@ -20,7 +20,6 @@ const App = () => {
   body: JSON.stringify({ trackingId: trimmedId }),
 });
 
-      });
 
       const data = await response.json();
 
