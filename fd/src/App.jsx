@@ -12,7 +12,7 @@ const App = () => {
     setTrackId(trimmedId);
 
     try {
-      const response = await fetch('/api/track', {
+      const response = await fetch('https://track-zp0e.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
