@@ -12,7 +12,7 @@ const App = () => {
     setTrackId(trimmedId);
 
     try {
-      const response = await fetch('https://track-bbpv.onrender.com/track', {
+      const response = await fetch('https://track-bbpv.onrender.com/api/track', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
