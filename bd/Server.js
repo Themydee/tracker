@@ -11,6 +11,9 @@ app.get('/', (req, res) => {
   res.send('Tracking API is running 🚀');
 });
 
+app.use(cors({
+  origin: '*'
+}))
 app.post('/api/track', (req, res) => {
   const { trackingId } = req.body;
   console.log('📦 Received trackingId:', trackingId);
