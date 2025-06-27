@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(cors({
-  origin: 'https://tracker-h95f.vercel.app/'
+  origin: 'https://tracker-h95f.vercel.app'
 }))
 app.post('/api/track', (req, res) => {
   const { trackingId } = req.body;
