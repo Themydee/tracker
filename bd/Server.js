@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import trackData from './trackData/track.js'; // ✅ Ensure `.js` is used if "type": "module" in package.json
+import trackData from './trackData/track.js'; 
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 3300;
