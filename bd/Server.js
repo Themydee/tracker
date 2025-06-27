@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 app.use(cors({
   origin: '*'
 }))
-app.post('/api/track', (req, res) => {
+app.post('https://track-bbpv.onrender.com/', (req, res) => {
   const { trackingId } = req.body;
   console.log('📦 Received trackingId:', trackingId);
 
