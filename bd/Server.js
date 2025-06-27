@@ -8,13 +8,17 @@ const PORT = process.env.PORT || 3300;
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Tracking API is running 🚀');
-});
 
 app.use(cors({
   origin: 'https://tracker-h95f.vercel.app'
 }))
+
+
+
+app.get('/', (req, res) => {
+  res.send('Tracking API is running 🚀');
+});
+
 app.post('/api/track', (req, res) => {
   const { trackingId } = req.body;
   console.log('📦 Received trackingId:', trackingId);
