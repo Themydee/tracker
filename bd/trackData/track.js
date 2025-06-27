@@ -16,7 +16,7 @@ const trackData = {
             "Order Placed",
             "Package Picked Up",
             "In Transit",
-            "Out for Delivery",
+            "Out for Delivery",         
             "Delivered"
         ],
         "currentStep": 4
